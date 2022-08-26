@@ -1,0 +1,36 @@
+.body{
+    background-color: beige
+}
+
+.titulo{
+    text-align: center;
+    color:aliceblue;
+    font-weight: bold;
+    font-family: 'Aboreto', cursive;
+    font-size: 200%;
+    background-color:#6F77EF;
+}
+
+#barraNavegacion ul{
+    list-style-type: none;
+    text-align: center;
+} 
+
+#barraNavegacion li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+} 
+
+#barraNavegacion li a {
+    padding: 2px 7px 2px 7px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    text-decoration: none;
+ } 
+
+ #barraNavegacion li a:hover{
+    background-color: #333333;
+    color: #ffffff;
+ } 
