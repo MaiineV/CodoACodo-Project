@@ -2,13 +2,17 @@
     background-color: beige
 }
 
-.titulo{
+#titulo h1{
     text-align: center;
+    font-size:x-large;
     color:aliceblue;
     font-weight: bold;
     font-family: 'Aboreto', cursive;
-    font-size: 200%;
-    background-color:#6F77EF;
+    width: 550px;  
+    padding: 25px;
+    border-radius: 50px;
+    margin: 0 auto;
+    background-color: #fcc;
 }
 
 #barraNavegacion ul{
