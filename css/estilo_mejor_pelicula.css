@@ -12,44 +12,88 @@ header {
 p {
     color: ghostwhite;
 }
-.flex {
-    width: auto;
-    display: flex;
-}
 #logo {
     align-self: center;
     margin-left: 2%;
 }
-.categoria {
+.flex {
+    width: auto;
     display: flex;
-    height: auto;
 }
-.categoria img {
+.grid-container {
+    display: grid;
+    grid-template-columns:  50% 50%;
+    gap: 10px;
+    padding: 10px;
+    background-color:#494747;
+    margin: 20px;
+}
+
+.grid-item {
+    background-color: #494747;
+    padding:10px;   
+    color: ghostwhite;
+    text-align: left;   
+    font-size: 24px;
+    font-weight: 600;        
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.imagen{
+    object-fit: cover;
     width: 100%;
+    height: 100%;
     border-radius: 10%;
 }
-.width-50 {
-    width: 50%;
+.trailer{
+    text-align: center;
+    background-color:#494747;
+    margin: 20px;
 }
-.h1 {
-    font-size: 34px;
+h1 {
+    font-size: 54px;
     font-weight: 600;
+    text-align: center;
 }
 .h2 {
     font-size: 24px;
     font-weight: 600;
 }
-.descripcion img{
-     width: 20px;
-}
-li {
-    font-size: 15px;
-    margin: 5px;
-}
 .descripcion{
-    width: fit-content;
     border-width: 1em;
+    font-size:18px;
     padding: 10px;
-    background-color: aliceblue;
-    border-radius: 5%;
+    margin: 20px;
+    background-color: #494747;
 }
+.descripcion ul li{
+    font-size: 18px;
+}
+li>img{
+    width:15px;
+    height:10px;
+}
+.mejores-pelis{
+    font-size: 24px;
+    color: ghostwhite;
+    text-align: center;
+}
+.mejores-pelis ul{
+    list-style: none;
+}
+.mejores-pelis li a:link, li a:visited, li a.active {
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    /*olor: rgb(111, 141, 123);*/
+    color: #d48a0d;
+}
+.mejores-pelis li a:hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: #a16e14;
+}
+
+
