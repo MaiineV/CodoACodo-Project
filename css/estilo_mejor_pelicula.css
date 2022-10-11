@@ -95,5 +95,15 @@ li>img{
     font-weight: 600;
     color: #a16e14;
 }
+.footer {
+    background-color: #4a4949;
+    color:ghostwhite;
+    text-align: center;
+    font-size: small;
+    font-weight: 40;
+}
+.footer h3,h4{
+    margin:2px;
+}
 
 

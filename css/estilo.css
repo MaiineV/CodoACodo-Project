@@ -67,6 +67,7 @@ p {
 .flex {
     width: auto;
     display: flex;
+    
 }
 
 #logo {
@@ -100,10 +101,20 @@ li a:hover {
 .categoria {
     display: flex;
     height: auto;
+    background-color: #494747;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#mejorpeli{
+    background-color: #494747;
 }
 
 .categoria img {
     width: 100%;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 .width-50 {
@@ -118,4 +129,30 @@ li a:hover {
 .h2 {
     font-size: 24px;
     font-weight: 600;
+}
+
+.formulario{
+ background-color:#494747;
+ padding: 10px;
+ margin:10px;
+ color:#d48a0d;
+ border: #d48a0d;
+ width: 40%;
+ border-radius: 20px;
+}
+
+.formulario ul li{
+    padding: 2px;
+    margin:2px;
+}
+
+.footer {
+    background-color: #4a4949;
+    color:ghostwhite;
+    text-align: center;
+    font-size: small;
+    font-weight: 40;
+}
+.footer h3,h4{
+    margin:2px;
 }

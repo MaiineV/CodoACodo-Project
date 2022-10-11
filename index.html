@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <script src="javascript.js"></script> 
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
@@ -62,8 +63,36 @@
             <img src="images\ocean.png" alt="">
         </div>
     </div>
-    <div id="footer">
+    <form name="fvalida" class ="formulario">
+        <p>Dejanos tu comentario o consulta: </p>
+        <ul>
+         <li>
+           <label>Nombre Completo:</label>
+           <input type="text" name="nombre" size="30" maxlength="100">
+         </li>
+         <li>
+           <label>Tema:</label>
+           <select name=tema>
+               <option value="Elegir">Elegir
+               <option value="Series">Series
+               <option value="Peliculas">Peliculas
+               <option value="Libros">Libros
+               <option value="Otros">Otro tema
+            </select>
+         </li>
+         <li>
+           <label >Dejanos tu comentario: </label>
+           <textarea id="msg" name="comentario"></textarea>
+         </li>
 
+            <input type="button" id="b1" value="Enviar" onclick="validarEnviar()">
+
+        </ul>
+    </form>
+
+    <div id="footer" class="footer">
+        <h3>Comision 22507 - Codo a codo 4.0</h3>
+        <h4>Constanza, Ignacio, Pablo</h4>
     </div>
 </body>
 
