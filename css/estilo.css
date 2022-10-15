@@ -156,3 +156,77 @@ li a:hover {
 .footer h3,h4{
     margin:2px;
 }
+
+#box div
+{
+position: absolute;
+height: 250px;
+width: 250px;
+border: 1px solid lightgrey;
+background: rgba(255,200,100,0.8);
+text-align: center;
+font-size: 200px;
+}
+ 
+#box
+{
+-webkit-animation-name: animation;
+animation-name: animation;
+-webkit-animation-timing-function: ease-in-out;
+animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+-webkit-animation-duration: 4s;
+animation-duration: 4s;
+margin:80;
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+-webkit-transform-origin: 125px 125px 0;
+transform-origin: 125px 125px 0;
+}
+ 
+#box .uno
+{ 
+-webkit-transform: translateZ(125px);
+transform: translateZ(125px);
+}
+#box .dos
+{ 
+-webkit-transform: rotateX(-90deg) translateZ(125px);
+transform: rotateX(-90deg) translateZ(125px);
+}
+#box .tres 
+{
+-webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(125px);
+transform: rotateY(90deg) rotateX(90deg) translateZ(125px);
+}
+#box .cuatro 
+{
+-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(125px);
+transform: rotateY(180deg) rotateZ(90deg) translateZ(125px);
+}
+#box .cinco
+{ 
+-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(125px);
+transform: rotateY(-90deg) rotateZ(90deg) translateZ(125px);
+}
+#box .seis 
+{
+-webkit-transform: rotateY(90deg) translateZ(125px);
+transform: rotateY(90deg) translateZ(125px);
+}
+ 
+@keyframes animation
+{
+from,to{}
+16% { -webkit-transform: rotateY(-90deg);}
+33% { -webkit-transform: rotateY(-90deg) rotateZ(135deg);}
+50% { -webkit-transform: rotateY(225deg) rotateZ(135deg);}
+66% { -webkit-transform: rotateY(135deg) rotateX(135deg);}
+83% { -webkit-transform: rotateX(135deg);}
+}
+
+.imagen-logo{
+    height:250px;
+    width:250px;
+}
