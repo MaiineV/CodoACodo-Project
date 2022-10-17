@@ -99,7 +99,7 @@ li a:hover {
 
   
  
-#serie-texto, #bcs-video, #img-collage {
+#juego-texto, #bcs-video, #img-collage {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -113,6 +113,13 @@ li a:hover {
 
 .width-50 {
     width: 50%;
+}
+
+.flexwidth{
+    max-width: 50%;
+    min-width: 25%;
+    max-height: 50%;
+    min-height: 25%;
 }
 
 .h1 {
