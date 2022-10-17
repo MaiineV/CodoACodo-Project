@@ -42,6 +42,7 @@
 
  * {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
 }
 body{
     background-color: #3D3C3C;
@@ -84,18 +85,44 @@ p {
     justify-content: space-around;
 }
 
-li a:link, li a:visited, li a.active {
-    font-size: 2em;
-    text-decoration: none;
-    font-weight: 600;
-    /*olor: rgb(111, 141, 123);*/
-    color: #d48a0d;
+li a:link,
+li a:visited,
+li a.active {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 3vmin ;
+  color: #d48a0d;
+  letter-spacing: 0.2em;
 }
 
 li a:hover {
-    text-decoration: none;
-    font-weight: 600;
-    color: #a16e14;
+  text-decoration: none;
+  font-weight: 600;
+  color: #d48a0d;
+}
+
+.underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #d48a0d;
+}
+
+.underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #d48a0d;
+  transform-origin: center;
+  transition: transform 0.45s ease-out;
+}
+
+.underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
 }
 
 .categoria {
