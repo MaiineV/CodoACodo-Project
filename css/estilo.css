@@ -247,10 +247,10 @@ transform: rotateY(90deg) translateZ(125px);
 {
 from,to{}
 16% { -webkit-transform: rotateY(-90deg);}
-33% { -webkit-transform: rotateY(-90deg) rotateZ(135deg);}
-50% { -webkit-transform: rotateY(225deg) rotateZ(135deg);}
-66% { -webkit-transform: rotateY(135deg) rotateX(135deg);}
-83% { -webkit-transform: rotateX(135deg);}
+33% { -webkit-transform: rotateY(-90deg) rotateZ(90deg);}
+50% { -webkit-transform: rotateY(-90deg) rotateZ(90deg) rotateX(180deg);}
+66% { -webkit-transform: rotateY(-90deg) rotateZ(90deg) rotateX(180deg) rotateY(-90deg);}
+83% { -webkit-transform: rotateY(-90deg) rotateZ(90deg) rotateX(180deg) rotateY(-90deg) rotateX(-90deg);}
 }
 
 .imagen-logo{
