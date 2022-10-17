@@ -1,6 +1,63 @@
 * {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
 }
+.nav-bar {
+    width: 100%;
+}
+.nav-bar ul {
+    list-style: none;
+}
+
+.nav-bar ul>li {
+    padding: 5%;
+}
+.nav-bar {
+    width: 100%;  
+}
+.nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar 
+li a:link,
+li a:visited,
+li a.active {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 3vmin ;
+  color: #d48a0d;
+  letter-spacing: 0.2em;
+}
+.nav-bar li a:hover {
+    text-decoration: none;
+    font-weight: 600;
+    color: #d48a0d;
+  }
+  .underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #d48a0d;
+  }
+  
+  .underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #d48a0d;
+    transform-origin: center;
+    transition: transform 0.45s ease-out;
+  }
+  
+.underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
+}  
 body{
     background-color: #3D3C3C;
 }
@@ -27,15 +84,18 @@ p {
     padding: 10px;
     background-color:#494747;
     margin: 20px;
+    border-radius: 20px;
 }
 
 .grid-item {
     background-color: #494747;
     padding:10px;   
     color: ghostwhite;
-    text-align: left;   
-    font-size: 24px;
-    font-weight: 600;        
+    text-align: left;         
+}
+.h1 {
+    font-size: 34px;
+    font-weight: 600;
 }
 img {
     max-width: 100%;
@@ -52,15 +112,8 @@ img {
     background-color:#494747;
     margin: 20px;
 }
-h1 {
-    font-size: 54px;
-    font-weight: 600;
-    text-align: center;
-}
-.h2 {
-    font-size: 24px;
-    font-weight: 600;
-}
+
+
 .descripcion{
     border-width: 1em;
     font-size:18px;
@@ -68,42 +121,77 @@ h1 {
     margin: 20px;
     background-color: #494747;
 }
-.descripcion ul li{
-    font-size: 18px;
-}
-li>img{
+
+.descripcion li>img{
     width:15px;
     height:10px;
 }
-.mejores-pelis{
-    font-size: 24px;
-    color: ghostwhite;
-    text-align: center;
-}
-.mejores-pelis ul{
-    list-style: none;
-}
-.mejores-pelis li a:link, li a:visited, li a.active {
-    font-size: 24px;
-    text-decoration: none;
-    font-weight: 600;
-    /*olor: rgb(111, 141, 123);*/
-    color: #d48a0d;
-}
-.mejores-pelis li a:hover {
-    text-decoration: none;
-    font-weight: 600;
-    color: #a16e14;
-}
+
 .footer {
     background-color: #4a4949;
     color:ghostwhite;
     text-align: center;
     font-size: small;
     font-weight: 40;
+    border-radius: 20px;
 }
 .footer h3,h4{
     margin:2px;
 }
+
+.videoTrailer{
+    margin: 20px;
+    height: auto;
+    width: auto;
+}
+
+.otras-pelis {
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    background-color:#494747;
+    margin: 20px;
+    border-radius: 20px;
+}
+.otras-pelis ul{
+    list-style: none;
+}
+.otras-pelis
+li a:link,
+li a:visited,
+li a.active {
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 3vmin ;
+  color: #d48a0d;
+  letter-spacing: 0.2em;
+}
+.otras-pelis li a:hover {
+    text-decoration: none;
+    font-weight: 100;
+    color: #e6960d;
+  }
+
+.datos-peli{
+    text-align: left;
+    color: ghostwhite;
+    gap: 10px;
+    padding: 10px;
+    background-color:#494747;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.datos-peli
+li a:link, 
+li.active,
+li:visited{
+    text-decoration: none;
+    background-color: #494747;
+    padding:10px;   
+    color: ghostwhite;
+    text-align: left;   
+}
+
 
 
