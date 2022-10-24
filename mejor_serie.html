@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-    <script src="javascript.js"></script>
+    <script src="mejor_serie.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
@@ -107,33 +107,6 @@
         <h3>Comision 22507 - Codo a codo 4.0</h3>
         <h4>Constanza, Ignacio, Pablo</h4>
     </div>
-    <script>
-        // Carga del iframe asincronicamente.
-        var tag = document.createElement('script');
-
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        // Crea el <iframe> (y el reproductor)
-        var player;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                height: '700',
-                width: '100%',
-                videoId: 'Ylv21uNzW4k',
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-        }
-
-        // Arranca el video cuando el reproductor esta listo.
-        function onPlayerReady(event) {
-            event.target.playVideo();
-        }
-
-    </script>
 </body>
 
 </html>
