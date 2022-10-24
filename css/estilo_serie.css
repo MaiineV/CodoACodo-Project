@@ -25,7 +25,6 @@ p, h1 {
 .flex {
     width: auto;
     display: flex;
-    
 }
 
 #logo {
@@ -84,7 +83,9 @@ li a:hover {
 
 .categoria {
     display: flex;
+    
     height: auto;
+    width: auto;
     background-color: #494747;
     margin: 10px;
     padding: 20px;
@@ -96,9 +97,6 @@ li a:hover {
     width: auto;
 }
 
-
-  
- 
 #serie-texto, #bcs-video, #img-collage {
     display: flex;
     align-content: center;
@@ -111,9 +109,7 @@ li a:hover {
     margin: 10px;
 }
 
-.width-50 {
-    width: 50%;
-}
+
 
 .h1 {
     font-size: 34px;
@@ -125,20 +121,6 @@ li a:hover {
     font-weight: 600;
 }
 
-.formulario{
- background-color:#494747;
- padding: 10px;
- margin:10px;
- color:#d48a0d;
- border: #d48a0d;
- width: 40%;
- border-radius: 20px;
-}
-
-.formulario ul li{
-    padding: 2px;
-    margin:2px;
-}
 
 .footer {
     background-color: #4a4949;
@@ -155,4 +137,27 @@ li a:hover {
 .imagen-logo{
     height:250px;
     width:250px;
+}
+
+
+#player {
+    margin-right: 1%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .width-50 {
+        min-width: 50%;
+    }
+    .width-100 {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .width-50, .width-100 {
+        min-width:100%;
+    }
+    .categoria {
+        flex-wrap: wrap;
+    }
 }
