@@ -4,6 +4,23 @@
 body{
     background-color: #3D3C3C;
 }
+.nav-bar {
+    width: 100%;
+}
+.nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-bar ul li a:link, li a:visited, li a.active{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 3vmin ;
+  color: #d48a0d;
+  letter-spacing: 0.2em;
+}
+
+
 header {
     /*background-color: rgba(211, 211, 211, 0.952);*/
     width: 100%;
