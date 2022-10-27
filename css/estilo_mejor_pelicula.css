@@ -29,7 +29,10 @@ header {
 p {
     color: ghostwhite;
 }
-
+#logo {
+    align-self: center;
+    margin-left: 2%;
+}
 .flex {
     width: auto;
     display: flex;
@@ -41,6 +44,10 @@ p {
     padding: 10px;
     background-color:#494747;
     margin: 20px;
+    border-radius: 20px;
+}
+.grid-container ul li{
+    color:ghostwhite;
 }
 
 .grid-item {
@@ -61,11 +68,11 @@ img {
     height: 100%;
     border-radius: 10%;
 }
-.trailer{
+/*.trailer{
     text-align: center;
     background-color:#494747;
     margin: 20px;
-}
+}*/
 h1 {
     font-size: 54px;
     font-weight: 600;
@@ -75,16 +82,7 @@ h1 {
     font-size: 24px;
     font-weight: 600;
 }
-.descripcion{
-    border-width: 1em;
-    font-size:18px;
-    padding: 10px;
-    margin: 20px;
-    background-color: #494747;
-}
-.descripcion ul li{
-    font-size: 18px;
-}
+
 li>img{
     width:15px;
     height:10px;
@@ -119,5 +117,6 @@ li>img{
 .footer h3,h4{
     margin:2px;
 }
+
 
 
