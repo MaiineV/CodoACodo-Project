@@ -23,13 +23,6 @@ function onYouTubeIframeAPIReady() {
             mute: 0, // Sound Off On
             rel: 0
 			},
-        events: {
-            'onReady': onPlayerReady
-        }
     });
 }
 
-// Arranca el video cuando el reproductor esta listo.
-function onPlayerReady(event) {
-    event.target.playVideo();
-}
