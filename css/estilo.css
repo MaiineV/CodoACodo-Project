@@ -47,27 +47,27 @@ li {
     transform-origin: 30px 30px 0;
 }
 
-#box .uno {
+.uno {
     transform: translateZ(30px);
 }
 
-#box .dos {
+.dos {
     transform: rotateX(-90deg) translateZ(30px);
 }
 
-#box .tres {
+.tres {
     transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
 }
 
-#box .cuatro {
+.cuatro {
     transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
 }
 
-#box .cinco {
+.cinco {
     transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
 }
 
-#box .seis {
+.seis {
     transform: rotateY(90deg) translateZ(30px);
 }
 
@@ -96,6 +96,7 @@ li {
         -webkit-transform: rotateY(-90deg) rotateZ(90deg) rotateX(180deg) rotateY(-90deg) rotateX(-90deg);
     }
 }
+
 /*Box Animation End*/
 
 /*Responsive Header*/
@@ -140,6 +141,7 @@ li {
     height: 60px;
     justify-self: center;
 }
+
 /*END BASE*/
 
 
@@ -211,6 +213,10 @@ li a:hover {
     border-radius: 20px;
 }
 
+.text-width{
+    width: 100%;
+}
+
 #mejorpeli {
     background-color: var(--gris-claro);
 }
@@ -241,7 +247,7 @@ li a:hover {
     text-align: center;
 }
 
-.content div:nth-child(even){
+.content>div:nth-child(even) {
     flex-direction: column;
 }
 
@@ -262,22 +268,22 @@ h4 {
 @media (min-width:800px) {
     .header-grid {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 1fr;
     }
 
     .logo {
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 1;
         grid-row-start: 1;
     }
 
     .menues {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr;
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 2;
-        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
     }
 
     .menues a {
@@ -312,6 +318,66 @@ h4 {
 
     .menues a {
         font-size: 1.75rem;
+    }
+
+    #box{transform-origin: 60px 60px 0px;}
+
+    #box div {
+        width: 120px;
+        height: 120px;
+    }
+
+    #box div img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .uno {
+        width: 120px;
+        height: 120px;
+        transform: translateZ(60px);
+    }
+
+    .dos {
+        width: 120px;
+        height: 120px;
+        transform: rotateX(-90deg) translateZ(60px);
+    }
+
+    .tres {
+        width: 120px;
+        height: 120px;
+        transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    }
+
+    .cuatro {
+        width: 120px;
+        height: 120px;
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    }
+
+    .cinco {
+        width: 120px;
+        height: 120px;
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    }
+
+    .seis {
+        width: 120px;
+        height: 120px;
+        transform: rotateY(90deg) translateZ(60px);
+    }
+
+    .categoria{
+        flex-direction: row;
+    }
+
+    .content>div:nth-child(even) {
+        flex-direction: row;
+    }
+
+    .text-width{
+        width: 50%;
     }
 }
 
