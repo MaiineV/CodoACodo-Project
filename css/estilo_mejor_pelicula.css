@@ -1,6 +1,13 @@
 * {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
 }
+:root {
+    --naranja: #d48a0d;
+    --gris-oscuro: #3D3C3C;
+    --gris-claro: #494747;
+}
+
 body{
     background-color: #3D3C3C;
 }
@@ -20,18 +27,176 @@ body{
   letter-spacing: 0.2em;
 }
 
+.underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--naranja);
+}
 
-header {
-    /*background-color: rgba(211, 211, 211, 0.952);*/
+.underline-animation:after {
+    content: '';
+    position: absolute;
     width: 100%;
-    background-color: #3D3C3C;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--naranja);
+    transform-origin: center;
+    transition: transform 0.45s ease-out;
+}
+
+.underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+/*Responsive Header*/
+.header-grid {
+    display: grid;
+    background-color: var(--gris-oscuro);
+    grid-gap: 1em;
+    padding: 1.5em;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(5, 0.5fr);
 }
 p {
     color: ghostwhite;
 }
-#logo {
-    align-self: center;
-    margin-left: 2%;
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+
+    width: 60px;
+    height: 60px;
+    justify-self: center;
+}
+#box {
+    animation-name: animation;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    margin: 80;
+    transform-style: preserve-3d;
+    transform-origin: 30px 30px 0;
+}
+#box{transform-origin: 60px 60px 0px;}
+
+    #box div {
+        width: 120px;
+        height: 120px;
+    }
+
+    #box div img {
+        width: 120px;
+        height: 120px;
+    }
+/*Box Animation*/
+#box div {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border: 1px solid lightgrey;
+    background: rgba(255, 200, 100, 0.8);
+    text-align: center;
+}
+
+#box div img {
+    width: 60px;
+    height: 60px;
+}
+
+#box {
+    animation-name: animation;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    margin: 80;
+    transform-style: preserve-3d;
+    transform-origin: 30px 30px 0;
+}
+
+.uno {
+    transform: translateZ(30px);
+}
+
+.dos {
+    transform: rotateX(-90deg) translateZ(30px);
+}
+
+.tres {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
+}
+
+.cuatro {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
+}
+
+.cinco {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
+}
+
+.seis {
+    transform: rotateY(90deg) translateZ(30px);
+}
+
+@keyframes animation {
+
+    from,
+    to {}
+
+    20% {
+        -webkit-transform: rotateY(-90deg);
+    }
+
+    40% {
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg);
+    }
+
+    60% {
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg) rotateX(180deg);
+    }
+
+    80% {
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg) rotateX(180deg) rotateY(-90deg);
+    }
+
+    100% {
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg) rotateX(180deg) rotateY(-90deg) rotateX(-90deg);
+    }
+}
+
+/*Box Animation End*/
+
+.menues {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    justify-content: space-evenly;
+    align-content: center;
+
+    grid-template-columns: 3fr;
+    grid-template-rows: repeat(5, 2fr);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+.menues {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.menues a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
 }
 .width-50 {
     width: 50%;
