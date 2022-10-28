@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-    <script src="javascript.js"></script> 
+    <script src="javascript.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
@@ -17,8 +17,8 @@
 </head>
 
 <body>
-    <header class="flex">
-        <div id="view" style="width:350px; height:350px; margin:80px auto 0 auto;">
+    <header class="header-grid">
+        <div class="logo">
             <div id="box">
                 <div class="uno"><img class="imagen-logo" src="images/logo-prem.png"></div>
                 <div class="dos"><img class="imagen-logo" src="images/logo-prem.png"></div>
@@ -28,71 +28,54 @@
                 <div class="seis"><img class="imagen-logo" src="images/logo-prem.png"></div>
             </div>
         </div>
-        <div class="nav-bar">
-            <ul>
-                <li><a href="index.html" class="underline-animation" target="">HOME</a></li>
-                <li><a href="mejor_pelicula.html" class="underline-animation" target="">PELICULA</a></li>
-                <li><a href="mejor_libro.html" class="underline-animation" target="">LIBRO</a></li>
-                <li><a href="mejor_serie.html" class="underline-animation" target="">SERIE</a></li>
-            </ul>
+        <div class="menues">
+            <a href="index.html" class="underline-animation" target="">HOME</a>
+            <a href="mejor_pelicula.html" class="underline-animation" target="">PELICULA</a>
+            <a href="mejor_juego.html" class="underline-animation" target="">JUEGO</a>
+            <a href="mejor_serie.html" class="underline-animation" target="">SERIE</a>
+            <a href="formulario.html" class="underline-animation" target="">ESCRIBINOS!</a>
         </div>
     </header>
     <div id="mejor-peli" class="categoria">
         <div id="mejor-peli-texto" class="width-50">
             <p class="h1">MEJOR PELICULA</p>
-            <p class="h2">Basada en una de las series de videojuegos más vendidas y aclamadas por la crítica de todos los tiempos, "Uncharted" presenta a un joven, astuto y carismático, Nathan Drake (Tom Holland) en su primera aventura como cazatesoros con su ingenioso compañero Victor “Sully” Sullivan (Mark Wahlberg). En una aventura de acción que se extiende por todo el mundo, ambos se embarcan en una peligrosa búsqueda de “el mayor tesoro nunca antes encontrado” al tiempo que rastrean las claves que les podrían conducir al hermano de Nathan, perdido hace ya mucho tiempo.</p>
-        </div>  
+            <p class="h2">Basada en una de las series de videojuegos más vendidas y aclamadas por la crítica de todos
+                los tiempos, "Uncharted" presenta a un joven, astuto y carismático, Nathan Drake (Tom Holland) en su
+                primera aventura como cazatesoros con su ingenioso compañero Victor “Sully” Sullivan (Mark Wahlberg). En
+                una aventura de acción que se extiende por todo el mundo, ambos se embarcan en una peligrosa búsqueda de
+                “el mayor tesoro nunca antes encontrado” al tiempo que rastrean las claves que les podrían conducir al
+                hermano de Nathan, perdido hace ya mucho tiempo.</p>
+        </div>
         <div id="mejor-peli-img" class="width-50">
             <img src="/images/portada-de-uncharted.jpg" alt="">
         </div>
     </div>
-    <div id="mejor-libro" class="categoria">
-        <div id="mejor-libro-img" class="width-50">
-            <img src="images\ocean.png" alt="">
+    <div id="mejor-juego" class="categoria">
+        <div id="mejor-juego-img" class="width-50">
+            <img src="images\CultOfTheLamb.jpg" alt="Logo de mejor juego del año">
         </div>
-        <div id="mejor-libro-texto" class="width-50">
-            <p class="h1">MEJOR LIBRO</p>
-            <p class="h2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil inventore assumenda suscipit
-                distinctio fugiat. Quisquam nesciunt tempore, est fugiat quas reiciendis, molestiae excepturi deserunt
-                qui iste magnam. Expedita, facilis impedit.</p>
+        <div id="mejor-juego-texto" class="width-50">
+            <p class="h1">MEJOR JUEGO</p>
+            <p class="h2">Un indie revolucionario que saldria al mercado como uno de los candidatos al mejor juego del
+                año, teninendo integraciones con plataformas de stream para que se pueda jugar tambien entre comunidades
+            </p>
         </div>
     </div>
     <div id="mejor-serie" class="categoria">
         <div id="mejor-serie-texto" class="width-50">
             <p class="h1">MEJOR SERIE</p>
-            <p class="h2">Ambientada entre principios y mediados de la década de 2000, <a href="mejor_serie.html" class="naranja underline-animation">Better Call Saul</a> sigue la historia de Jimmy McGill (interpretado por Bob Odenkirk), un estafador recientemente convertido en abogado y que posteriormente sería conocido como Saul Goodman. La serie comienza seis años antes de los eventos de Breaking Bad y muestra la transformación de McGill de ex-estafador de poca monta hasta convertirse en el abogado y criminal Saul Goodman, uno de los personajes principales de Breaking Bad.</p>
-        
+            <p class="h2">Ambientada entre principios y mediados de la década de 2000, <a href="mejor_serie.html"
+                    class="naranja underline-animation">Better Call Saul</a> sigue la historia de Jimmy McGill
+                (interpretado por Bob Odenkirk), un estafador recientemente convertido en abogado y que posteriormente
+                sería conocido como Saul Goodman. La serie comienza seis años antes de los eventos de Breaking Bad y
+                muestra la transformación de McGill de ex-estafador de poca monta hasta convertirse en el abogado y
+                criminal Saul Goodman, uno de los personajes principales de Breaking Bad.</p>
+
         </div>
         <div id="mejor-serie-img" class="width-50">
             <img src="images\bcs-home-foto.jpg" alt="">
         </div>
     </div>
-    <form name="fvalida" class ="formulario">
-        <p>Dejanos tu comentario o consulta: </p>
-        <ul>
-         <li>
-           <label>Nombre Completo:</label>
-           <input type="text" name="nombre" size="30" maxlength="100">
-         </li>
-         <li>
-           <label>Tema:</label>
-           <select name=tema>
-               <option value="Elegir">Elegir
-               <option value="Series">Series
-               <option value="Peliculas">Peliculas
-               <option value="Libros">Libros
-               <option value="Otros">Otro tema
-            </select>
-         </li>
-         <li>
-           <label >Dejanos tu comentario: </label>
-           <textarea id="msg" name="comentario"></textarea>
-         </li>
-
-            <input type="button" id="b1" value="Enviar" onclick="validarEnviar()">
-
-        </ul>
-    </form>
 
     <div id="footer" class="footer">
         <h3>Comision 22507 - Codo a codo 4.0</h3>

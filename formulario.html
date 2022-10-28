@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escribinos</title>
+</head>
+<body>
+    <form name="fvalida" class ="formulario">
+        <p>Dejanos tu comentario o consulta: </p>
+        <ul>
+         <li>
+           <label>Nombre Completo:</label>
+           <input type="text" name="nombre" size="30" maxlength="100">
+         </li>
+         <li>
+           <label>Tema:</label>
+           <select name=tema>
+               <option value="Elegir">Elegir
+               <option value="Series">Series
+               <option value="Peliculas">Peliculas
+               <option value="Libros">Libros
+               <option value="Otros">Otro tema
+            </select>
+         </li>
+         <li>
+           <label >Dejanos tu comentario: </label>
+           <textarea id="msg" name="comentario"></textarea>
+         </li>
+
+            <input type="button" id="b1" value="Enviar" onclick="validarEnviar()">
+
+        </ul>
+    </form>
+
+</body>
+</html>
