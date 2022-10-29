@@ -13,6 +13,117 @@ li {
     padding: 5%;
 }
 
+/*Box Animation*/
+#box div {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border: 1px solid lightgrey;
+    background: rgba(255, 200, 100, 0.8);
+    text-align: center;
+}
+
+#box div img {
+    width: 60px;
+    height: 60px;
+}
+
+#box {
+    animation-name: animation;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    margin: 80;
+    transform-style: preserve-3d;
+    transform-origin: 30px 30px 0;
+}
+
+.uno {
+    transform: translateZ(30px);
+}
+
+.dos {
+    transform: rotateX(-90deg) translateZ(30px);
+}
+
+.tres {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(30px);
+}
+
+.cuatro {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(30px);
+}
+
+.cinco {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(30px);
+}
+
+.seis {
+    transform: rotateY(90deg) translateZ(30px);
+}
+
+@keyframes animation {
+
+    from,
+    to {}
+
+    20% {
+        -webkit-transform: rotateY(-90deg);
+    }
+
+    40% {
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg);
+    }
+
+    60% {
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg) rotateX(180deg);
+    }
+
+    80% {
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg) rotateX(180deg) rotateY(-90deg);
+    }
+
+    100% {
+        -webkit-transform: rotateY(-90deg) rotateZ(90deg) rotateX(180deg) rotateY(-90deg) rotateX(-90deg);
+    }
+}
+
+/*Box Animation End*/
+
+/*Responsive Header*/
+.header-grid {
+    display: grid;
+    background-color: var(--gris-oscuro);
+    grid-gap: 1em;
+    padding: 1.5em;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(5, 0.5fr);
+}
+
+.menues {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    justify-content: space-evenly;
+    align-content: center;
+
+    grid-template-columns: 3fr;
+    grid-template-rows: repeat(5, 2fr);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+.menues a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
 header {
     width: 100%;
     background-color: #3D3C3C;
@@ -121,6 +232,9 @@ li a:hover {
     font-weight: 600;
 }
 
+.content>div:nth-child(even) {
+    flex-direction: column;
+}
 
 .footer {
     background-color: #4a4949;
@@ -170,5 +284,122 @@ li a:hover {
     .logo {
         height: auto;
         max-width: 80%;
+    }
+}
+
+/*TABLE*/
+@media (min-width:800px) {
+    .header-grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .logo {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+    }
+
+    .menues {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .menues a {
+        font-size: 2vw;
+    }
+}
+
+@media (min-width:1200px) {
+    .header-grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .logo {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+
+        justify-self: center;
+        width: 120px;
+        height: 120px;
+    }
+
+    .menues {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .menues a {
+        font-size: 1.75rem;
+    }
+
+    #box{transform-origin: 60px 60px 0px;}
+
+    #box div {
+        width: 120px;
+        height: 120px;
+    }
+
+    #box div img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .uno {
+        width: 120px;
+        height: 120px;
+        transform: translateZ(60px);
+    }
+
+    .dos {
+        width: 120px;
+        height: 120px;
+        transform: rotateX(-90deg) translateZ(60px);
+    }
+
+    .tres {
+        width: 120px;
+        height: 120px;
+        transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    }
+
+    .cuatro {
+        width: 120px;
+        height: 120px;
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    }
+
+    .cinco {
+        width: 120px;
+        height: 120px;
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    }
+
+    .seis {
+        width: 120px;
+        height: 120px;
+        transform: rotateY(90deg) translateZ(60px);
+    }
+
+    .categoria{
+        flex-direction: row;
+    }
+
+    .content>div:nth-child(even) {
+        flex-direction: row;
+    }
+
+    .text-width{
+        width: 50%;
     }
 }
