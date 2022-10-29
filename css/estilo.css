@@ -132,7 +132,15 @@ li {
     font-size: 2rem;
 }
 
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
 
+    width: 60px;
+    height: 60px;
+    justify-self: center;
+}
 
 /*END BASE*/
 
