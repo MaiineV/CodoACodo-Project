@@ -205,6 +205,10 @@ li a:hover {
     border-radius: 20px;
 }
 
+.categoria>div{
+    padding: 10px;
+}
+
 .text-width{
     width: 100%;
 }
